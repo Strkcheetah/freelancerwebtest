@@ -3,28 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tu Nombre · Tours virtuales 360 con 3DVista</title>
+<title>Fotógrafo 360 y desarrollador de tours con 3DVista | Richard Londoño</title>
+<meta name="description" content="Fotógrafo 360 y desarrollador de tours virtuales con 3DVista en San Cristóbal, Táchira. Captura, desarrollo y publicación de experiencias inmersivas.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Richard Londoño">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://tudominio.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌐%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Tours virtuales 360 con 3DVista | Richard Londoño">
+<meta property="og:description" content="Experiencias 360 interactivas para mostrar espacios sin límites de distancia. Conoce mi portafolio.">
+<meta property="og:url" content="https://tudominio.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Richard Londoño","address":{"@type":"PostalAddress","addressLocality":"San Cristóbal","addressRegion":"Táchira","addressCountry":"VE"},"url":"https://tudominio.vercel.app/","description":"Desarrollo de tours virtuales 360 interactivos con 3DVista para inmobiliarias, hoteles, museos y empresas.","serviceType":["Tours virtuales 360","Desarrollo con 3DVista","Experiencias interactivas VR"],"knowsAbout":["3DVista","Tours virtuales","Fotografía 360","Realidad virtual"],"areaServed":"Worldwide","email":"hola@tudominio.com"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
-  --bg:#eef3f4;--surface:#ffffff;--ink:#0f2a3d;--muted:#51697a;--line:#cfdbe0;--accent:#e8890c;--accent-ink:#1a1204;--hero:#0f2a3d;
+  --bg:#010405;--surface:#0b1215;--ink:#f5f8f9;--muted:#9fb0b8;--line:#1f2c32;--accent:#f7501b;--accent-ink:#010000;--hero:#000000;
   --hd:'Bricolage Grotesque','Segoe UI',sans-serif;--bd:'Manrope','Segoe UI',sans-serif;
-  color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a26;--surface:#122636;--ink:#e8f0f3;--muted:#9bb2c0;--line:#25405280;--accent:#f2a33a;--hero:#08141d;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0b1a26;--surface:#122636;--ink:#e8f0f3;--muted:#9bb2c0;--line:#25405280;--accent:#f2a33a;--hero:#08141d;color-scheme:dark}
+  color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--bd)}
 h1,h2,h3{font-family:var(--hd);line-height:1.08;margin:0;letter-spacing:-.02em}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
 
 /* Hero con visor 360 */
-.hero{position:relative;background:var(--hero);color:#f2f7f9;min-height:min(92vh,760px);display:flex;flex-direction:column;overflow:hidden}
-.nav{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;max-width:1120px;width:100%;margin:0 auto}
+.hero{position:relative;background:var(--hero);color:#f2f7f9;min-height:min(92vh,760px);min-height:min(92svh,760px);display:flex;flex-direction:column;overflow:hidden}
+.nav{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));max-width:1120px;width:100%;margin:0 auto}
 .logo{font:700 1.15rem var(--hd);text-decoration:none}
 .nav a.cta-s{font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid #ffffff66;padding:8px 16px;border-radius:99px}
 .nav a.cta-s:hover{background:#ffffff1a}
@@ -32,23 +44,18 @@ a{color:inherit}
 .viewer:active{cursor:grabbing}
 .track{position:absolute;left:0;bottom:0;height:100%;display:flex;will-change:transform}
 .track svg{height:100%;width:auto;min-width:1600px;flex:none;display:block}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,#08141dcc 0%,#08141d55 45%,#08141d99 100%);pointer-events:none}
-.copy{position:relative;z-index:2;margin:auto 0 0;padding:0 0 72px;pointer-events:none}
-.copy h1{font-size:clamp(2.4rem,7vw,5rem);max-width:15ch;font-weight:700}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,#000000cc 0%,#00000040 32%,#00000099 58%,var(--hero) 92%);pointer-events:none}
+.copy{position:relative;z-index:2;width:100%;margin:auto auto 0;padding-top:0;padding-bottom:72px;pointer-events:none}
+.copy h1{font-size:clamp(2rem,7vw,5rem);max-width:18ch;font-weight:700}
 .copy p{max-width:46ch;font-size:1.15rem;color:#d4e2e8;margin:20px 0 28px}
 .copy .btns{display:flex;gap:12px;flex-wrap:wrap;pointer-events:auto}
 .btn{display:inline-block;font:600 1rem var(--bd);text-decoration:none;padding:14px 24px;border-radius:12px;background:var(--accent);color:var(--accent-ink)}
 .btn:hover{filter:brightness(1.08)}
 .btn.ghost{background:transparent;color:inherit;border:1.5px solid #ffffff66}
 .hint{position:absolute;z-index:2;right:24px;bottom:24px;font-size:.85rem;color:#d4e2e8;display:flex;align-items:center;gap:8px;pointer-events:none}
-.hs{position:absolute;z-index:2;width:44px;height:44px;border-radius:50%;border:2px solid #fff;background:#ffffff26;backdrop-filter:blur(4px);display:grid;place-items:center;cursor:pointer;padding:0;color:#fff}
-.hs::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:2px solid var(--accent);opacity:.0;animation:ping 2.6s ease-out 1.2s 2}
-@keyframes ping{0%{transform:scale(.7);opacity:.9}100%{transform:scale(1.4);opacity:0}}
-.hs span{position:absolute;left:54px;white-space:nowrap;background:#08141dd9;padding:6px 12px;border-radius:8px;font-size:.85rem;opacity:0;transform:translateX(-6px);transition:.2s;pointer-events:none}
-.hs:hover span,.hs:focus-visible span{opacity:1;transform:none}
 
 /* Secciones */
-section{padding:88px 0}
+section{padding:88px 0;content-visibility:auto;contain-intrinsic-size:auto 640px}
 .lead{max-width:56ch;color:var(--muted);margin:14px 0 0}
 h2{font-size:clamp(1.9rem,4.5vw,3rem)}
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line)}
@@ -63,8 +70,8 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem)}
 .thumb{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:linear-gradient(160deg,var(--a),var(--b));isolation:isolate}
 .proj.big .thumb{aspect-ratio:16/9}
 .thumb::before{content:"";position:absolute;left:-10%;right:-10%;bottom:0;height:42%;background:var(--c);opacity:.55;clip-path:polygon(0 60%,18% 25%,34% 55%,52% 10%,70% 50%,88% 20%,100% 45%,100% 100%,0 100%)}
-.thumb i{position:absolute;top:14px;right:14px;font:600 .8rem var(--bd);font-style:normal;background:#08141db3;color:#fff;padding:5px 10px;border-radius:99px;backdrop-filter:blur(4px)}
-.thumb::after{content:"";position:absolute;inset:0;background:#08141d;opacity:0;transition:opacity .25s;z-index:1}
+.thumb i{position:absolute;top:14px;right:14px;font:600 .8rem var(--bd);font-style:normal;background:#000000b3;color:#fff;padding:5px 10px;border-radius:99px;backdrop-filter:blur(4px)}
+.thumb::after{content:"";position:absolute;inset:0;background:#000;opacity:0;transition:opacity .25s;z-index:1}
 .proj:hover .thumb::after,.proj:focus-visible .thumb::after{opacity:.35}
 .proj .go{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);opacity:0;transition:.25s;background:var(--accent);color:var(--accent-ink);font-weight:600;padding:10px 18px;border-radius:99px}
 .proj:hover .go,.proj:focus-visible .go{opacity:1;transform:translate(-50%,-50%)}
@@ -72,11 +79,16 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem)}
 .proj p{margin:2px 0 0;color:var(--muted);font-size:.97rem}
 
 .stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.about{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.about p{margin:0 0 18px;color:var(--muted);max-width:62ch}
+.about p:first-of-type{color:var(--ink);font-size:1.2rem}
 .stack span{border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:99px;font-weight:500;font-size:.95rem}
 
-.contact{background:var(--hero);color:#f2f7f9;text-align:left}
+.contact{background:var(--accent);color:var(--accent-ink);text-align:left}
 .contact h2{max-width:18ch}
-.contact .lead{color:#b9ccd6}
+.contact .lead{color:var(--accent-ink);opacity:.82}
+.contact .btn{background:var(--accent-ink);color:#fff}
+.contact .btn.ghost{background:transparent;color:var(--accent-ink);border-color:var(--accent-ink)}
 .contact .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
 
@@ -88,9 +100,20 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
   .proj.big .thumb{aspect-ratio:4/3}
   section{padding:64px 0}
   .hint{display:none}
-  .copy{padding-bottom:56px}
+  .copy{padding-bottom:48px}
+  .about{grid-template-columns:1fr;gap:20px}
+  .copy p{font-size:1.05rem;margin:16px 0 24px}
+  .nav{padding-top:16px;padding-bottom:16px}
 }
-@media (prefers-reduced-motion:reduce){.hs::after{animation:none}html{scroll-behavior:auto}}
+@media (min-width:761px) and (max-width:980px){.proj{grid-column:span 3}.proj.big{grid-column:span 6}.svc{padding-right:18px}.svc+.svc{padding-left:18px}}
+@media (max-width:480px){
+  .wrap{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  .nav{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  .copy .btns,.contact .btns{flex-direction:column}
+  .btn{text-align:center;width:100%}
+  .stack span{font-size:.9rem;padding:7px 14px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -103,41 +126,37 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
       <svg viewBox="0 0 1600 700" preserveAspectRatio="xMinYMax slice" aria-hidden="true"><use href="#pano"/></svg>
     </div>
     <div class="shade"></div>
-    <button class="hs" style="left:22%;top:54%" aria-label="Punto de interés: Terraza"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Terraza</span></button>
-    <button class="hs" style="left:62%;top:60%" aria-label="Punto de interés: Sala principal"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Sala principal</span></button>
-    <button class="hs" style="left:82%;top:50%" aria-label="Punto de interés: Ir a la siguiente escena"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Siguiente escena</span></button>
   </div>
 
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4a6b"/><stop offset=".6" stop-color="#e8a56a"/><stop offset="1" stop-color="#f6d9a8"/></linearGradient>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#010405"/><stop offset=".3" stop-color="#0a5f84"/><stop offset=".5" stop-color="#f7501b"/><stop offset=".68" stop-color="#fcea0d"/><stop offset="1" stop-color="#fcea0d"/></linearGradient>
       <g id="pano">
         <rect width="1600" height="700" fill="url(#sky)"/>
-        <circle cx="520" cy="360" r="70" fill="#fff3d6" opacity=".9"/>
-        <path d="M0 470 L160 380 L300 450 L470 340 L640 450 L820 370 L1000 460 L1180 360 L1360 450 L1500 390 L1600 470 V700 H0Z" fill="#2a5a73" opacity=".85"/>
-        <path d="M0 520 L200 460 L380 520 L600 440 L800 520 L1040 450 L1250 520 L1430 470 L1600 520 V700 H0Z" fill="#17384d"/>
-        <g fill="#0c2231">
+        <circle cx="520" cy="360" r="70" fill="#fcea0d"/>
+        <path d="M0 470 L160 380 L300 450 L470 340 L640 450 L820 370 L1000 460 L1180 360 L1360 450 L1500 390 L1600 470 V700 H0Z" fill="#0a5273" opacity=".92"/>
+        <path d="M0 520 L200 460 L380 520 L600 440 L800 520 L1040 450 L1250 520 L1430 470 L1600 520 V700 H0Z" fill="#031a24"/>
+        <g fill="#010405">
           <rect x="60" y="430" width="150" height="270"/><rect x="230" y="470" width="110" height="230"/>
           <rect x="700" y="410" width="190" height="290"/><rect x="910" y="460" width="120" height="240"/>
           <rect x="1180" y="440" width="170" height="260"/><rect x="1370" y="480" width="150" height="220"/>
         </g>
-        <g fill="#ffcf7a" opacity=".85">
+        <g fill="#fcea0d" opacity=".9">
           <rect x="85" y="460" width="22" height="30"/><rect x="125" y="460" width="22" height="30"/><rect x="85" y="520" width="22" height="30"/>
           <rect x="735" y="445" width="24" height="32"/><rect x="780" y="445" width="24" height="32"/><rect x="825" y="505" width="24" height="32"/>
           <rect x="1210" y="475" width="22" height="30"/><rect x="1255" y="535" width="22" height="30"/><rect x="1400" y="515" width="22" height="30"/>
         </g>
-        <rect y="620" width="1600" height="80" fill="#08141d"/>
       </g>
     </defs>
   </svg>
 
   <nav class="nav">
-    <a class="logo" href="#">Tu Nombre</a>
+    <a class="logo" href="#">Richard Londoño</a>
     <a class="cta-s" href="#contacto">Hablemos</a>
   </nav>
 
   <div class="wrap copy">
-    <h1>Tours virtuales 360 que se recorren como si estuvieras ahí</h1>
+    <h1>Tours virtuales 360 con 3DVista que se recorren como si estuvieras ahí</h1>
     <p>Desarrollo experiencias interactivas con 3DVista para inmobiliarias, hoteles, museos y empresas que quieren mostrar sus espacios sin límites de distancia.</p>
     <div class="btns">
       <a class="btn" href="#portafolio">Ver portafolio</a>
@@ -165,12 +184,24 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
     <h2>Portafolio</h2>
     <p class="lead">Una selección de tours que he desarrollado. Ábrelos y recórrelos tú mismo.</p>
     <div class="grid">
-      <a class="proj big" href="#" style="--a:#1b4a6b;--b:#e8a56a;--c:#0c2231"><div class="thumb"><i>360° · Inmobiliaria</i><span class="go">Ver tour</span></div><div><h3>Residencia Costa Azul</h3><p>Recorrido completo de 14 escenas con plano interactivo y ficha técnica por habitación.</p></div></a>
-      <a class="proj" href="#" style="--a:#3a2c5c;--b:#d9778a;--c:#1f1536"><div class="thumb"><i>360° · Turismo</i><span class="go">Ver tour</span></div><div><h3>Hotel Boutique Aurora</h3><p>Habitaciones, spa y restaurante con reserva integrada.</p></div></a>
-      <a class="proj" href="#" style="--a:#2d5a4e;--b:#c8d98a;--c:#12302a"><div class="thumb"><i>360° · Cultura</i><span class="go">Ver tour</span></div><div><h3>Museo de Historia Regional</h3><p>Salas con audioguía y fichas de cada pieza.</p></div></a>
-      <a class="proj" href="#" style="--a:#5a3b2d;--b:#f0b66b;--c:#2e1b12"><div class="thumb"><i>360° · Retail</i><span class="go">Ver tour</span></div><div><h3>Showroom Atlas</h3><p>Catálogo navegable con enlaces directos a cada producto.</p></div></a>
-      <a class="proj" href="#" style="--a:#26406b;--b:#8fc3e8;--c:#10203a"><div class="thumb"><i>360° · Educación</i><span class="go">Ver tour</span></div><div><h3>Campus Universitario</h3><p>Visita guiada para aspirantes con video de bienvenida.</p></div></a>
-      <a class="proj" href="#" style="--a:#3f4a52;--b:#e2a14a;--c:#1a2126"><div class="thumb"><i>360° · Industria</i><span class="go">Ver tour</span></div><div><h3>Planta de Producción Norte</h3><p>Capacitación de seguridad con puntos de control.</p></div></a>
+      <a class="proj big" href="#" style="--a:#031a24;--b:#1ab1e6;--c:#000000"><div class="thumb"><i>360° · Inmobiliaria</i><span class="go">Ver tour</span></div><div><h3>Residencia Costa Azul</h3><p>Recorrido completo de 14 escenas con plano interactivo y ficha técnica por habitación.</p></div></a>
+      <a class="proj" href="#" style="--a:#1a0803;--b:#f7501b;--c:#000000"><div class="thumb"><i>360° · Turismo</i><span class="go">Ver tour</span></div><div><h3>Hotel Boutique Aurora</h3><p>Habitaciones, spa y restaurante con reserva integrada.</p></div></a>
+      <a class="proj" href="#" style="--a:#1a1700;--b:#fcea0d;--c:#000000"><div class="thumb"><i>360° · Cultura</i><span class="go">Ver tour</span></div><div><h3>Museo de Historia Regional</h3><p>Salas con audioguía y fichas de cada pieza.</p></div></a>
+      <a class="proj" href="#" style="--a:#f7501b;--b:#fcea0d;--c:#1a0803"><div class="thumb"><i>360° · Retail</i><span class="go">Ver tour</span></div><div><h3>Showroom Atlas</h3><p>Catálogo navegable con enlaces directos a cada producto.</p></div></a>
+      <a class="proj" href="#" style="--a:#1ab1e6;--b:#010405;--c:#000000"><div class="thumb"><i>360° · Educación</i><span class="go">Ver tour</span></div><div><h3>Campus Universitario</h3><p>Visita guiada para aspirantes con video de bienvenida.</p></div></a>
+      <a class="proj" href="#" style="--a:#fcea0d;--b:#f7501b;--c:#010405"><div class="thumb"><i>360° · Industria</i><span class="go">Ver tour</span></div><div><h3>Planta de Producción Norte</h3><p>Capacitación de seguridad con puntos de control.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-mi" style="padding-top:0">
+  <div class="wrap about">
+    <h2>Fotografía 360 y experiencias inmersivas, de principio a fin</h2>
+    <div>
+      <p>Soy Richard Londoño, fotógrafo y desarrollador de experiencias 360 con base en San Cristóbal, estado Táchira.</p>
+      <p>Llevo cinco años en el sector de la fotografía 360. Me encargo tanto de la captura en sitio como de la creación de tours virtuales e interactivos con 3DVista, desde la toma de las imágenes hasta la publicación del recorrido.</p>
+      <p>Al ocuparme de todo el proceso, el resultado es consistente y no tienes que coordinar a varios proveedores.</p>
+      <div class="stack"><span>5 años de experiencia</span><span>Captura en sitio</span><span>Tours con 3DVista</span><span>San Cristóbal, Táchira</span></div>
     </div>
   </div>
 </section>
@@ -189,13 +220,13 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
     <p class="lead">Cuéntame qué quieres mostrar y te envío una propuesta con tiempos y costos.</p>
     <div class="btns">
       <a class="btn" href="mailto:hola@tudominio.com">Escribirme por correo</a>
-      <a class="btn ghost" href="https://wa.me/00000000000">Enviar WhatsApp</a>
+      <a class="btn ghost" href="https://wa.me/00000000000" rel="noopener" target="_blank">Enviar WhatsApp</a>
     </div>
   </div>
 </section>
 </main>
 
-<footer class="contact" style="padding-top:0"><div class="wrap">© 2026 Tu Nombre · Desarrollador de tours 360 con 3DVista</div></footer>
+<footer class="contact" style="padding-top:0"><div class="wrap">© 2026 Richard Londoño · Fotografía 360 y tours virtuales con 3DVista · San Cristóbal, Táchira</div></footer>
 
 <script>
 (function(){
@@ -204,11 +235,13 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
   var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function size(){w=t.children[0].getBoundingClientRect().width||1600}
   function paint(){x=((x%w)+w)%w;t.style.transform='translateX('+(-x)+'px)'}
-  v.addEventListener('pointerdown',function(e){if(e.target.closest('.hs'))return;drag=true;sx=e.clientX;ox=x;v.setPointerCapture(e.pointerId)});
+  v.addEventListener('pointerdown',function(e){drag=true;sx=e.clientX;ox=x;v.setPointerCapture(e.pointerId)});
   v.addEventListener('pointermove',function(e){if(!drag)return;x=ox-(e.clientX-sx);paint()});
   ['pointerup','pointercancel'].forEach(function(n){v.addEventListener(n,function(){drag=false})});
   v.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){x-=80;paint()}if(e.key==='ArrowRight'){x+=80;paint()}});
-  function tick(){if(!drag&&!still){x+=0.25;paint()}requestAnimationFrame(tick)}
+  var vis=true;
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(v)}
+  function tick(){if(vis&&!drag&&!still){x+=0.25;paint()}requestAnimationFrame(tick)}
   window.addEventListener('resize',function(){size();paint()});
   size();paint();tick();
 })();
