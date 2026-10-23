@@ -1,0 +1,20 @@
+PROYECTO WEB - RICHARD LONDONO
+==============================
+Archivos:
+  index.html        Landing principal
+  portafolio.html   Portafolio completo con filtros
+  robots.txt        Instrucciones para buscadores
+  sitemap.xml       Mapa del sitio para Google
+  img/              Imagenes (ver img/LEEME.txt)
+
+COMO PUBLICAR EN VERCEL
+Sube TODO el contenido de esta carpeta (incluida img/) a la raiz del proyecto.
+
+QUE DEBES REEMPLAZAR (buscar con Ctrl+F)
+1. https://ejemplo.com/tour-1 ... tour-10  -> enlaces reales de tus tours
+   (en index.html y portafolio.html)
+2. tudominio.vercel.app                     -> tu dominio real
+   (en index.html, portafolio.html, robots.txt y sitemap.xml)
+3. hola@tudominio.com                       -> tu correo real
+4. https://wa.me/00000000000                -> tu WhatsApp (codigo de pais + numero, sin + ni espacios)
+5. Nombres y descripciones de los proyectos de ejemplo.

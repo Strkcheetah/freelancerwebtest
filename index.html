@@ -16,6 +16,8 @@
 <meta property="og:description" content="Experiencias 360 interactivas para mostrar espacios sin límites de distancia. Conoce mi portafolio.">
 <meta property="og:url" content="https://tudominio.vercel.app/">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://tudominio.vercel.app/img/og.jpg">
+<meta name="twitter:image" content="https://tudominio.vercel.app/img/og.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Richard Londoño","address":{"@type":"PostalAddress","addressLocality":"San Cristóbal","addressRegion":"Táchira","addressCountry":"VE"},"url":"https://tudominio.vercel.app/","description":"Desarrollo de tours virtuales 360 interactivos con 3DVista para inmobiliarias, hoteles, museos y empresas.","serviceType":["Tours virtuales 360","Desarrollo con 3DVista","Experiencias interactivas VR"],"knowsAbout":["3DVista","Tours virtuales","Fotografía 360","Realidad virtual"],"areaServed":"Worldwide","email":"hola@tudominio.com"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +42,8 @@ a{color:inherit}
 .logo{font:700 1.15rem var(--hd);text-decoration:none}
 .nav a.cta-s{font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid #ffffff66;padding:8px 16px;border-radius:99px}
 .nav a.cta-s:hover{background:#ffffff1a}
+.navr{display:flex;align-items:center;gap:20px}
+.nav a.plain{font-weight:600;font-size:.95rem;text-decoration:none}
 .viewer{position:absolute;inset:0;cursor:grab;touch-action:pan-y;user-select:none}
 .viewer:active{cursor:grabbing}
 .track{position:absolute;left:0;bottom:0;height:100%;display:flex;will-change:transform}
@@ -56,6 +60,7 @@ a{color:inherit}
 
 /* Secciones */
 section{padding:88px 0;content-visibility:auto;contain-intrinsic-size:auto 640px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
 .lead{max-width:56ch;color:var(--muted);margin:14px 0 0}
 h2{font-size:clamp(1.9rem,4.5vw,3rem)}
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line)}
@@ -75,6 +80,7 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem)}
 .proj:hover .thumb::after,.proj:focus-visible .thumb::after{opacity:.35}
 .proj .go{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);opacity:0;transition:.25s;background:var(--accent);color:var(--accent-ink);font-weight:600;padding:10px 18px;border-radius:99px}
 .proj:hover .go,.proj:focus-visible .go{opacity:1;transform:translate(-50%,-50%)}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .proj h3{font-size:1.25rem}
 .proj p{margin:2px 0 0;color:var(--muted);font-size:.97rem}
 
@@ -152,7 +158,7 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
 
   <nav class="nav">
     <a class="logo" href="#">Richard Londoño</a>
-    <a class="cta-s" href="#contacto">Hablemos</a>
+    <span class="navr"><a class="plain" href="portafolio.html">Portafolio</a><a class="cta-s" href="#contacto">Hablemos</a></span>
   </nav>
 
   <div class="wrap copy">
@@ -181,15 +187,15 @@ footer{background:var(--hero);color:#8ea6b4;padding:0 0 32px;font-size:.9rem}
 
 <section id="portafolio" style="padding-top:0">
   <div class="wrap">
-    <h2>Portafolio</h2>
+    <div class="head"><h2>Portafolio</h2><a class="btn" href="portafolio.html">Ver todos los proyectos</a></div>
     <p class="lead">Una selección de tours que he desarrollado. Ábrelos y recórrelos tú mismo.</p>
     <div class="grid">
-      <a class="proj big" href="#" style="--a:#031a24;--b:#1ab1e6;--c:#000000"><div class="thumb"><i>360° · Inmobiliaria</i><span class="go">Ver tour</span></div><div><h3>Residencia Costa Azul</h3><p>Recorrido completo de 14 escenas con plano interactivo y ficha técnica por habitación.</p></div></a>
-      <a class="proj" href="#" style="--a:#1a0803;--b:#f7501b;--c:#000000"><div class="thumb"><i>360° · Turismo</i><span class="go">Ver tour</span></div><div><h3>Hotel Boutique Aurora</h3><p>Habitaciones, spa y restaurante con reserva integrada.</p></div></a>
-      <a class="proj" href="#" style="--a:#1a1700;--b:#fcea0d;--c:#000000"><div class="thumb"><i>360° · Cultura</i><span class="go">Ver tour</span></div><div><h3>Museo de Historia Regional</h3><p>Salas con audioguía y fichas de cada pieza.</p></div></a>
-      <a class="proj" href="#" style="--a:#f7501b;--b:#fcea0d;--c:#1a0803"><div class="thumb"><i>360° · Retail</i><span class="go">Ver tour</span></div><div><h3>Showroom Atlas</h3><p>Catálogo navegable con enlaces directos a cada producto.</p></div></a>
-      <a class="proj" href="#" style="--a:#1ab1e6;--b:#010405;--c:#000000"><div class="thumb"><i>360° · Educación</i><span class="go">Ver tour</span></div><div><h3>Campus Universitario</h3><p>Visita guiada para aspirantes con video de bienvenida.</p></div></a>
-      <a class="proj" href="#" style="--a:#fcea0d;--b:#f7501b;--c:#010405"><div class="thumb"><i>360° · Industria</i><span class="go">Ver tour</span></div><div><h3>Planta de Producción Norte</h3><p>Capacitación de seguridad con puntos de control.</p></div></a>
+      <a class="proj big" href="https://ejemplo.com/tour-1" target="_blank" rel="noopener" style="--a:#031a24;--b:#1ab1e6;--c:#000000"><div class="thumb"><img src="img/tour-1.jpg" alt="Vista 360 de Residencia Costa Azul" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()"><i>360° · Inmobiliaria</i><span class="go">Ver tour</span></div><div><h3>Residencia Costa Azul</h3><p>Recorrido completo de 14 escenas con plano interactivo y ficha técnica por habitación.</p></div></a>
+      <a class="proj" href="https://ejemplo.com/tour-2" target="_blank" rel="noopener" style="--a:#1a0803;--b:#f7501b;--c:#000000"><div class="thumb"><img src="img/tour-2.jpg" alt="Vista 360 de Hotel Boutique Aurora" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()"><i>360° · Turismo</i><span class="go">Ver tour</span></div><div><h3>Hotel Boutique Aurora</h3><p>Habitaciones, spa y restaurante con reserva integrada.</p></div></a>
+      <a class="proj" href="https://ejemplo.com/tour-3" target="_blank" rel="noopener" style="--a:#1a1700;--b:#fcea0d;--c:#000000"><div class="thumb"><img src="img/tour-3.jpg" alt="Vista 360 de Museo de Historia Regional" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()"><i>360° · Cultura</i><span class="go">Ver tour</span></div><div><h3>Museo de Historia Regional</h3><p>Salas con audioguía y fichas de cada pieza.</p></div></a>
+      <a class="proj" href="https://ejemplo.com/tour-4" target="_blank" rel="noopener" style="--a:#f7501b;--b:#fcea0d;--c:#1a0803"><div class="thumb"><img src="img/tour-4.jpg" alt="Vista 360 de Showroom Atlas" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()"><i>360° · Retail</i><span class="go">Ver tour</span></div><div><h3>Showroom Atlas</h3><p>Catálogo navegable con enlaces directos a cada producto.</p></div></a>
+      <a class="proj" href="https://ejemplo.com/tour-5" target="_blank" rel="noopener" style="--a:#1ab1e6;--b:#010405;--c:#000000"><div class="thumb"><img src="img/tour-5.jpg" alt="Vista 360 de Campus Universitario" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()"><i>360° · Educación</i><span class="go">Ver tour</span></div><div><h3>Campus Universitario</h3><p>Visita guiada para aspirantes con video de bienvenida.</p></div></a>
+      <a class="proj" href="https://ejemplo.com/tour-6" target="_blank" rel="noopener" style="--a:#fcea0d;--b:#f7501b;--c:#010405"><div class="thumb"><img src="img/tour-6.jpg" alt="Vista 360 de Planta de Producción Norte" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()"><i>360° · Industria</i><span class="go">Ver tour</span></div><div><h3>Planta de Producción Norte</h3><p>Capacitación de seguridad con puntos de control.</p></div></a>
     </div>
   </div>
 </section>
